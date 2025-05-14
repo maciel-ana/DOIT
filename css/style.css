@@ -96,6 +96,10 @@ body {
     padding-left: 6px;
 }
 
+#circle {
+    cursor: pointer;
+}
+
 /* Adicionar */
 
 .digitar-adicionar {
@@ -122,6 +126,11 @@ body {
     border-radius: 10px;
     width: 10em;
     color: #fff;
+}
+
+#adicionar:hover {
+    background-color: #324E73;
+    transition: 0.2s all ease;
 }
 
 input:focus {

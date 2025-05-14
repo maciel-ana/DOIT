@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 5em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cadastre-se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    width: 50%;
+    border-radius: 20px;
+    background-color: #fff;
+   box-shadow: 5px 8px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    font-family: "Montserrat", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.titulo h3 {
+    font-weight: 700;
+    color: #111F55;
+}
+
+.cadastre-se h5 {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+#email,
+#senha,
+#confirmacaoSenha,
+#nome    {
+    border: none;
+    border-radius: 10px;
+    width: 20em;
+    height: 2em;
+    background-color: #F0EFEF;
+    margin-bottom: 30px;
+}
+
+::placeholder {
+    color: #111F55;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+    padding-left: 2em;
+}
+
+.btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#btn {
+    border: none;
+    border-radius: 10px;
+    background-color: #111F55;
+    color: #fff;
+    width: 10em;
+    height: 2em;
+    margin-bottom: 10px;
+}
+
+#btn:hover {
+    background-color: #c3cfe2;
+    transition: 1s all ease;
+}
+
+.login {
+    padding-bottom: 20px;
+}
+
+.login a{ 
+    text-decoration: none;
+}
