@@ -1,0 +1,139 @@
+/* Home */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+.header {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.logo::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.login-btn {
+    padding: 0.60rem 1.5rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.page-title {
+    margin-bottom: 2rem;
+}
+
+.task-input {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.task-item:hover {
+    background-color: rgba(66, 133, 244, 0.05);
+}
+
+.task-checkbox {
+    margin-right: 1rem;
+    position: relative;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.task-item.completed .task-checkbox::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* Cadastre-se / Login */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+.cadastre-se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    padding-bottom: 20px;
+} 
+
+.cadastre-se h5 {
+    padding-bottom: 5px;
+}
+
+#email,
+#senha,
+#confirmacaoSenha,
+#nome {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+input:focus {
+    padding-left: 2em;
+}
+
+.btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#btn {
+    width: 22em;
+    height: 2.5em;
+    margin-bottom: 10px;
+}
+
+.login {
+    padding-bottom: 20px;
+}
+
+/* Home */
+

@@ -2,12 +2,6 @@ const emailLogin = document.getElementById('email');
 const senhaLogin = document.getElementById('senha');
 const btnLogin = document.getElementById('btn');
 
-// No início do script da página
-// if (!verificarLogin()) {
-//     // Usuário não está logado, redirecionar para página de login
-//     alert('Você precisa estar logado para acessar esta página');
-//     window.location.href = 'caminho/para/login/index.html';
-// }
 
 if (btnLogin) {
     btnLogin.addEventListener('click', fazerLogin);
