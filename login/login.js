@@ -16,7 +16,7 @@ function fazerLogin() {
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
     const usuario = usuarios.find(u => u.email === emailLogin.value);
-    const perfil = document.getElementById('perfil');
+    const perfil = document.querySelector('.login-btn');
 
     // verificando se a senha esta correta
     if (usuario && usuario.senha === senhaLogin.value) {

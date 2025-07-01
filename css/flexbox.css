@@ -41,13 +41,32 @@
     margin-bottom: 2rem;
 }
 
-.task-input {
+.input_item {
     padding: 1rem;
     margin-bottom: 2rem;
+    width: 35em;
+}
+
+.add-tarefa {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn-add {
+    position: absolute;
+    margin-left: 25em;
+    padding: 10px;
+    width: 10em;
+    height: 3.8em;
 }
 
 .task-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     list-style: none;
+    gap: 20px;
 }
 
 .task-item {
