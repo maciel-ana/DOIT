@@ -29,6 +29,7 @@ body {
     font-size: 14px;
 }
 
+
 .login-btn {
     background-color: #4285f4;
     color: white;
@@ -42,6 +43,8 @@ body {
 .login-btn:hover {
     background-color: #3367d6;
 }
+
+/* Fim Login */
 
 .page-title {
     font-size: 2rem;
@@ -73,20 +76,26 @@ body {
     border-radius: 10px;
 }
 
-.task-list {
-    list-style: none;
+#listaTarefas li {
+    background-color: #7990d4; 
+    color: white;
+    padding: 15px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+    font-size: 1rem;
 }
 
+#listaTarefas li:hover {
+    background-color: #657cbb;
+}
 
-.task-item {
-    border-bottom: 1px solid #e1e5e9;
+.checkbox {
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
 }
 
-.task-item:hover {
-    background-color: rgba(66, 133, 244, 0.05);
-}
 .section-title {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -100,42 +109,6 @@ body {
     font-size: 14px;
     font-family: "Public Sans", sans-serif;
 }
-
-.task-checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #d1d5db;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.task-checkbox:hover {
-    border-color: #4285f4;
-}
-
-.task-text {
-    color: #333;
-}
-
-.task-item.completed .task-checkbox {
-    background-color: #4285f4;
-    border-color: #4285f4;
-}
-
-.task-item.completed .task-checkbox::after {
-    content: "✓";
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.task-item.completed .task-text {
-    text-decoration: line-through;
-    color: #666;
-}
-
 
 /* Pagina Login/Cadastre-se  */
 .container {

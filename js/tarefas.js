@@ -8,6 +8,7 @@ export function criarItemDaLista(valor) {
     }
 
     const itemDaLista = document.createElement('li');
+    itemDaLista.classList.add("item-lista-li");
     const containeritemDaLista = document.createElement('div');
 
     containeritemDaLista.classList.add("lista-item-container");
@@ -15,6 +16,7 @@ export function criarItemDaLista(valor) {
     inputCheckbox.type = 'checkbox';
 
     inputCheckbox.id = 'checkbox-' + contador++;
+    inputCheckbox.classList.add("checkbox");
 
     const nomeItem = document.createElement('p');
     nomeItem.innerText = valor;
