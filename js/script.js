@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     login.addEventListener('click', logout);
     
+    //  Adicionando as tarefas
     const listaTarefas = document.getElementById('listaTarefas');
     const botaoAdicionar = document.getElementById('adicionar-item');
     
@@ -42,6 +43,44 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     
     }
+
+    // Movendo para as tarefas concluídas
+
+    const completedList = document.getElementById('completedList');
+
+    listaTarefas.addEventListener('click', function(event) {
+        
+        if (event.target.matches('.checkbox')) {
+            const checkboxClicado = event.target;
+            const tarefa = checkboxClicado.closest('li');
+            
+            checkboxClicado.disable = true;
+
+            tarefa.classList.add('movendo-tarefa');
+
+            setTimeout(() => {
+               tarefa.classList.add('completed');
+            
+               completedList.appendChild(tarefa);
+
+               tarefa.classList.remove('movendo-tarefa');
+            }, 3000);
+        }
+
+        completedList.addEventListener('click', function(event) {
+            const checkboxClicado = event.target;
+            const tarefa = checkboxClicado.closest('li');
+
+            if (event.target.matches('.checkbox')) {
+                checkboxClicado.disable = false;
+
+                tarefa.classList.remove('completed');
+
+                listaTarefas.appendChild(tarefa);
+            }
+
+        })
+    });
     
     verificarListaVazia(listaTarefas);
 

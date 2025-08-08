@@ -69,7 +69,7 @@
 }
 
 .mensagem-lista-vazia {
-    text-align: center;
+    text-align: start;
 }
 
 /* Cadastre-se / Login */
@@ -131,68 +131,24 @@ input:focus {
     padding-bottom: 20px;
 }
 
-/* ===================================================================== */
-/* === BLOCO DE CÓDIGO UNIFICADO PARA A LISTA DE TAREFAS (COPIE ISTO) === */
-/* ===================================================================== */
-
-/* 1. O contêiner da lista (a <ul>) */
 .task-list {
     display: flex;
     flex-direction: column; 
     list-style: none;     
     padding: 0;
-    gap: 10px;     
-    width: 100%;       
+    gap: 10px;   
+    width: 32em;         
 }
 
-/* 2. Alinhamento específico para a lista de PENDENTES */
-#listaTarefas {
+#completedList li{
     align-items: flex-start; 
+    width: 32em;         
 }
 
-/* 3. Alinhamento específico para a lista de CONCLUÍDAS */
-#completedList {
-    align-items: flex-end; 
-}
 
-/* 4. O ESTILO PARA CADA ITEM INDIVIDUAL (a <li>) */
-/* Este é o passo mais importante */
 #listaTarefas li,
 #completedList li {
-    /* A MUDANÇA CHAVE: Faz o item ter a largura do seu conteúdo */
     display: inline-flex;
-    
-    /* Alinhamento interno (checkbox + texto) */
     align-items: center;
     gap: 10px;
-
-    /* Estilos visuais que você já tinha */
-    background-color: #7990d4; 
-    color: white;
-    padding: 12px 15px; 
-    border-radius: 12px; 
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.2s;
-}
-
-/* Efeito Hover */
-#listaTarefas li:hover,
-#completedList li:hover {
-    background-color: #657cbb;
-}
-
-/* Estilo para a checkbox dentro do item */
-#listaTarefas li .checkbox,
-#completedList li .checkbox {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-/* Estilo para tarefas concluídas */
-#completedList {
-    background-color: #a0a0a0;
-    text-decoration: line-through;
-    color: #e0e0e0;
 }
